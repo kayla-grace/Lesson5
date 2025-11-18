@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       aBoolean: ${{ false }}
-      anNull: ${{ null }}
+      aNull: ${{ null }}
       aNumber: ${{ 42 }}
       aString: this is a string
   steps:
