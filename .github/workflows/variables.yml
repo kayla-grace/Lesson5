@@ -32,7 +32,7 @@ jobs:
       env:
         FORMAT_VAR: ${{ format('GitHub {0} {1} {2}', 'actions', 'is', 'awsome!') }}
         run: |
-          echo "this step runs a special script to clean up after the failed step"
+          echo "this step runs a special script to clean up after the failed step."
           echo ${{ env.FORMAT_VAR }}
     - name: function and always status check
       if: ${{ startsWith(env.aSting, 'this') && always() )}
