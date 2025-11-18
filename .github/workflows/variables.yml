@@ -36,7 +36,7 @@ jobs:
           echo ${{ env.FORMAT_VAR }}
     - name: function and always status check
       if: ${{ startsWith(env.aSting, 'this') && always() }}
-      run: sleep 60
+      run: sleep 90
     - name: test cancel status check
       if: ${{ cancelled() }}
       run: echo "this job runs if a workflow is cancelled, it can also be used for clean-up scripts"
